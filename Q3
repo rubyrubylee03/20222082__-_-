@@ -1,0 +1,8 @@
+def solution(age):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    answer = ''
+    while age > 0:
+        age -= 1
+        answer = alphabet[age % 10] + answer
+        age //= 10
+    return answer
